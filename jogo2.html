@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare os números</button>
+
+<script>
+	
+	var segredo = Math.round(Math.random() * 10);
+	var numEntrado = document.querySelector("input");
+	numEntrado.focus();
+	
+	function valida() {
+
+		if(numEntrado.value == segredo) {
+			alert("Você ACERTOU!");
+		} else {
+			alert("Você Errou!");
+		}
+		numEntrado.value = "";
+		numEntrado.focus();
+	}
+
+	var botao = document.querySelector("button");
+	botao.onclick = valida;
+
+	mostra("Fim!");
+
+	
+</script>
+	 
+ 
